@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name           Add Follow List Form
 // @namespace      your-namespace
-// @version        1.3
-// @description    Adds a form with a labeled input box and submit button after the element with the ID "quot" and stores the input value in local storage when the submit button is clicked; loops through the elements with the class "author" and adds a border and "following" tag to the parent element with the class "post_list" if the username matches any username in the "followList" stored in local storage
-// @match          https://www.253874.net/*
-// @match          https://253874.net/*
+// @version        1.2
+// @author         zzm88 & calon @ 253874.net
+// @description    Highlight the post content of the user in the "followList".
+// @match          https://*.253874.net/t/*
+// @match          http://*.253874.net/t/*
 // @icon           https://www.google.com/s2/favicons?sz=64&domain=253874.net
 // @grant          none
+// @license        MIT
 // ==/UserScript==
 
 (function() {
@@ -89,11 +91,6 @@
         callback(authors);
     }
 
-
-
-
-
-
     function highlightPosts(authors, followList) {
     // Loop through the elements with the class "author" and highlight the posts by users in the follow list
     for (let i = 0; i < authors.length; i++) {
@@ -107,29 +104,23 @@
 
         // Check if the username is in the follow list
         if (followList && followList.includes(username)) {
-            // Add a border and "following" tag to the parent element with the class "post_list"
+            // highlight these users' replies
             const postList = author.closest(".post_list");
-            postList.style.border = "2px solid green";
-
+            postList.style.borderLeft = "medium solid #FF0000";
+            postList.style.paddingLeft = "0.4rem";
+            // usernameElement.style.borderBottom = "medium solid #FF0000";
+            // postList.style.boxShadow = "0.2rem 0.2rem 0.5rem rgb(0 0 0 / .5)";
 
         } else {
-            // Remove the border and "following" tag from the parent element with the class "post_list"
+            // Back to the default style
             const postList = author.closest(".post_list");
-            postList.style.border = "";
-
+            postList.style.borderLeft = "initial";
+            // usernameElement.style.borderBottom = "initial";
+            // postList.style.boxShadow = "";
 
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 })();
+
