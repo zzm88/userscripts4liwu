@@ -18,3 +18,6 @@ https://greasyfork.org/zh-CN/scripts/440427-253874-face-icon
 
 # 里屋赞 official
 要不说你傻呢 heroboy zzm88
+
+# 里屋赞chrome extension（已废弃）
+https://chrome.google.com/webstore/detail/%E9%87%8C%E5%B1%8B%E8%B5%9E/ophkgoaghaocniklppgncndplmcoabea?hl=zh-CN
