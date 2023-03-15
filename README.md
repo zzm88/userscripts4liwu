@@ -1,5 +1,6 @@
 # userscripts4liwu
-userscripts 4 liwu
+userscripts for liwu
+for the love of liwu_253874 <- mopsite
 
 
 # greasyfork
@@ -14,3 +15,6 @@ heroboy
 https://greasyfork.org/zh-CN/scripts/435259-%E9%87%8C%E5%B1%8B%E8%B5%9E
 ## 253874-face-icon
 https://greasyfork.org/zh-CN/scripts/440427-253874-face-icon
+
+# 里屋赞 official
+要不说你傻呢 heroboy zzm88
