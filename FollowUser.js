@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name           Add Follow List Form
 // @namespace      your-namespace
-// @version        1.1
+// @version        1.3
 // @description    Adds a form with a labeled input box and submit button after the element with the ID "quot" and stores the input value in local storage when the submit button is clicked; loops through the elements with the class "author" and adds a border and "following" tag to the parent element with the class "post_list" if the username matches any username in the "followList" stored in local storage
 // @match          https://www.253874.net/*
+// @match          https://253874.net/*
 // @icon           https://www.google.com/s2/favicons?sz=64&domain=253874.net
 // @grant          none
 // ==/UserScript==
@@ -132,4 +133,3 @@
 
 
 })();
-
